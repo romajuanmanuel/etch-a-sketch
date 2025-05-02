@@ -1,23 +1,44 @@
-.square {
-    width: 20px;
-    /* divide el ancho en 16 columnas */
-    height: 20px;
-    /* divide la altura en 16 filas */
+/* Reset de márgenes y padding del body y html */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    /* incluye padding/border en el tamaño */
-    background-color: red;
-    /* color opcional */
-    border: 1px solid black;
-    /* bordes opcionales para ver la grilla */
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Evita que aparezca la barra de desplazamiento */
+    background-color: rgb(37, 36, 36);
 }
 
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-content:flex-start
+}
+
+/*.square {
+    width: 1em;
+    height: 1em;
+    box-sizing: border-box;
+    background-color: red;
+    border: 1px solid black;
+}
+*/
+.square {
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: rgb(117, 194, 130);
+}
+
 #container {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    width: 640px;
-    /* ancho total de la grilla */
-    height: 640px;
-    /* alto total de la grilla */
-    align-content: flex-start;
+    width: 480px;
+    height: 480px;
+    background-color: white;
 }
