@@ -1,4 +1,4 @@
-/* Reset de márgenes y padding del body y html */
+
 *,
 *::before,
 *::after {
@@ -9,7 +9,7 @@
 
 html, body {
     height: 100%;
-    overflow: hidden; /* Evita que aparezca la barra de desplazamiento */
+    overflow: hidden; 
     background-color: rgb(37, 36, 36);
 }
 
@@ -20,14 +20,7 @@ body {
     align-content:flex-start
 }
 
-/*.square {
-    width: 1em;
-    height: 1em;
-    box-sizing: border-box;
-    background-color: red;
-    border: 1px solid black;
-}
-*/
+
 .square {
     box-sizing: border-box;
     border: 1px solid black;

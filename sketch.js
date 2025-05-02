@@ -2,7 +2,7 @@ function generateSquares(gridSize = 16) {
     const container = document.getElementById("container");
     container.innerHTML = '';
 
-    const containerSize = 480; // Tamaño fijo del contenedor
+    const containerSize = 480; // container size in pixels
     const squareSize = containerSize / gridSize;
 
     for (let i = 0; i < gridSize * gridSize; i++) {
@@ -44,7 +44,7 @@ function getRandomColor() {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    generateSquares(); // Cuadrícula inicial
+    generateSquares(); // initial grid size
 
     document.getElementById("changeSize").addEventListener("click", changeGridSize);
     document.getElementById("reset").addEventListener("click", () => generateSquares());
