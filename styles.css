@@ -1,0 +1,23 @@
+.square {
+    width: 20px;
+    /* divide el ancho en 16 columnas */
+    height: 20px;
+    /* divide la altura en 16 filas */
+    box-sizing: border-box;
+    /* incluye padding/border en el tamaño */
+    background-color: red;
+    /* color opcional */
+    border: 1px solid black;
+    /* bordes opcionales para ver la grilla */
+}
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    /* ancho total de la grilla */
+    height: 640px;
+    /* alto total de la grilla */
+    align-content: flex-start;
+}
